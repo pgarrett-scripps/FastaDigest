@@ -1,0 +1,2 @@
+peptacular==2.2.0
+streamlit==1.43.0
