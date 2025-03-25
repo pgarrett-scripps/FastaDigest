@@ -4,13 +4,13 @@ import peptacular as pt
 import plotly.express as px
 import re
 
-st.set_page_config(page_title="Fasta-Digest", page_icon="🦠", layout="wide")
+st.set_page_config(page_title="Fasta-Digest", page_icon="🍽️", layout="wide")
 
 def main():
     with st.expander("Common Proteases"):
         st.write(pt.PROTEASES)
     with st.sidebar:
-        st.title("FASTA Digest 🦠")
+        st.title("FASTA Digest 🍽️")
 
         st.caption("This tool digests proteins in a FASTA file using user-defined protease configurations.")
 

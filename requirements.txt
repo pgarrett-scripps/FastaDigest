@@ -1,2 +1,3 @@
 peptacular==2.2.0
 streamlit==1.43.0
+plotly==6.0.0
