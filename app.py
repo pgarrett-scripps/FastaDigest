@@ -7,8 +7,22 @@ import re
 st.set_page_config(page_title="Fasta-Digest", page_icon="🍽️", layout="wide")
 
 def main():
+
+    # Inject custom CSS to set the width of the sidebar
+    st.markdown(
+        """
+        <style>
+            section[data-testid="stSidebar"] {
+                width: 600px !important; # Set the width to your desired value
+            }
+        </style>
+        """,
+        unsafe_allow_html=True,
+    )
+
     with st.expander("Common Proteases"):
         st.write(pt.PROTEASES)
+
     with st.sidebar:
         st.title("FASTA Digest 🍽️")
 
